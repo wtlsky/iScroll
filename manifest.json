@@ -1,0 +1,49 @@
+{
+  "name": "iScroll",
+  "version": "1.0.0",
+  "description": "iScroll 是一款为网页添加快速滚动按钮的扩展。您可以快速滚动到页面底部、顶部、匀速滚动和刷新页面。",
+  "icons": {
+    "16": "./img/16.png",
+    "48": "./img/48.png",
+    "128": "./img/128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "./img/16.png",
+      "19": "./img/19.png",
+      "38": "./img/38.png"
+    },
+    "default_title": "iScroll"
+  },
+  "homepage_url":"https://github.com/wtlsky/iScroll",
+  "background":{"scripts":["script/background.js"]},
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "script/script.js"
+      ],
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "img/*.png"
+  ],
+  "permissions": [
+    "<all_urls>",
+    "storage",
+    "tabs",
+    "contextMenus"
+  ],
+  "options_page":"options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "manifest_version": 2
+}

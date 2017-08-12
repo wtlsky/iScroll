@@ -1,0 +1,45 @@
+/**
+ * Created by 武天亮 on 2017/8/10.
+ */
+.goTop-wrap {
+    background: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 30%;
+    box-shadow: 0 0 4px 0 #333;
+    border-radius: 4px;
+    z-index: 9999999;
+    box-sizing: content-box;
+}
+
+.ext-btn {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+    background: #fff;
+}
+
+.ext-btn:active {
+    background: #abc5cc;
+}
+
+.ext-btn-refresh, .ext-btn-bottom, .ext-btn-auto {
+    border-top: 1px dotted #263238;
+}
+
+.ext-btn-top{
+    border-radius:4px 4px 0 0;
+}
+
+.ext-btn-auto {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+}

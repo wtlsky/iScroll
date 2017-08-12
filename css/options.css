@@ -1,0 +1,25 @@
+/**
+ * Created by 武天亮 on 2017/8/11.
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.readme {
+    color: #d33332;
+    font-size: 12px;
+}
